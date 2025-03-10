@@ -1,0 +1,54 @@
+/* Dropdown Styles Tablet and Laptop*/
+@media (min-width: 600px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-Content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+
+    .dropdown:hover .dropdown-Content {
+        display: block;
+    }
+}
+/* Dropdown Styles Mobile*/
+@media (max-width: 480px) {
+    .dropdown-Content {
+        background-color: white;
+        min-width: 150px;
+        z-index: 1;
+        border-radius: 5px;
+        display: none;
+    }
+
+    .dropdown-Menu-Item:not(:nth-child(3n)) {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .droppedImage {
+        transform: rotate(0deg);
+    }
+}
+
+.dropdown-Icon {
+    height: 21px;
+    margin-right: 5px;
+}
+
+.dropdown-Content a {
+    padding: 9px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-Content a:hover {
+    background-color: #dedcdc;
+}

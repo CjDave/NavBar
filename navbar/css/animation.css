@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rain Animation */
+.rain {
+    margin-top: 1000px;
+    background-color: aqua;
+    pointer-events: none;
+}
+
+.raindrop {
+    position: absolute;
+    width: 4px;
+    height: 12px;
+    background: rgba(0, 213, 255, 0.915);
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        top: 10%;
+        opacity: 0.5;
+    }
+
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Type Writer - Animations */
+.ad-Text {
+    width: 390px;
+    animation: typeWriter 6s steps(40, end) infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typeWriter {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 0.15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes typeWriter {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 0.15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

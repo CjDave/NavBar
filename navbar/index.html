@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,800&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+
+  <!-- Title Bar -->
+  <title>AirDavid</title>
+  <link rel="icon" href="assets/plane-Logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <section class="navbar">
+      <!-- Logo Section -->
+      <div class="logo-Section">
+        <img src="assets/plane-Logo.png" class="logo-Icon" alt="AirDavid Logo" />
+        <h1 class="logo-Text">AirDavid</h1>
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger-Section">
+        <img src="assets/hamburger-Icon.png" class="hamburger-Icon" id="hamburger-Btn" alt="Menu" />
+      </div>
+
+      <!-- Menu Items -->
+      <ul class="navbar-Menu" id="navbar-MenuId">
+        <li class="menu-Items"><a class="menu-Item-Text" href="#">Home</a></li>
+        <li class="menu-Items"><a class="menu-Item-Text selected" href="#">About</a></li>
+
+        <!-- Dropdown Menu -->
+        <li class="menu-Items dropdown no-hover" id="dropdownId">
+          <a id="services" class="menu-Item-Text" href="#">Services <img id="service-Icon"
+              src="assets/dropdown-Icon-Black.png" class="navbar-Icon" alt="Dropdown Icon" /></a>
+          <div id="dropdown-Menu" class="dropdown-Content no-hover">
+            <a class="dropdown-Menu-Item" href="#"><img src="assets/police-dropdown-Icon.png" class="dropdown-Icon"
+                alt="Air Security Icon" />Air Security</a>
+            <a class="dropdown-Menu-Item" href="#"><img src="assets/taxi-dropdown-Icon.png" class="dropdown-Icon"
+                alt="Taxis Icon" />Taxis</a>
+            <a class="dropdown-Menu-Item" href="#"><img src="assets/tailor-dropdown-Icon.png" class="dropdown-Icon"
+                alt="Tailoring Icon" />Tailoring</a>
+          </div>
+        </li>
+
+        <li class="menu-Items"><a class="menu-Item-Text" href="#">Blog</a></li>
+        <li class="menu-Items"><a class="menu-Item-Text" href="#">Contact</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="rain"></div> <!-- Rain animation -->
+    <section class="background-Image-Section">
+      <img src="assets/rain-alt.gif" class="background-Image" alt="Rain Effect" />
+      <div class="ad-Text">
+        <p><span class="brand-Text">AirDavid</span>, we'll never leave you in the rain.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer></footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="/navigation.js"></script>
+  <script type="module" src="/rainAnimation.js"></script>
+</body>
+
+</html>

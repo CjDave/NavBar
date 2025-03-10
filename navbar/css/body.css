@@ -1,0 +1,55 @@
+body {
+  background-color: bisque;
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-rows: 100px;
+  overflow-x: hidden;
+  padding: 0px;
+
+}
+
+
+main {
+  margin: 0px;
+  grid-row: 2 / 3;
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+
+}
+
+.background-Image-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background-Image{
+  height:200px;
+}
+
+.brand-Text {
+  font-weight: 700;
+  font-size: 25px;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #bfff00, 0 0 15px #ff00ff;
+  }
+
+  100% {
+    text-shadow: 0 0 20px #eeff00, 0 0 30px #daff0a, 0 0 40px #ff00ff;
+  }
+}
+
+.ad-Text {
+  border-right: .15em solid orange;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
